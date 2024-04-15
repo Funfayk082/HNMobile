@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HelpNearbyMobile</string>
+    <string name="n_n">Добро пожаловать в наше приложение!\n Кто Вы: волонтёр или нуждающийся?\n Выберите свою роль и дарите добро другим.</string>
+    <string name="imv_text">Я волонтёр</string>
+    <string name="imn_text">Я нуждающийся</string>
+    <string name="city">Город</string>
+    <string name="_a">------</string>
+    <string name="address">Адрес</string>
+    <string name="need_help_txt">Нужна помощь!</string>
+    <string name="need_lelp_comment_hint">Комментарий (опционально)</string>
+    <string name="change_link">Изменить</string>
+    <string name="choose_city">Введите город</string>
+    <string name="choose_address">Введите адрес</string>
+    <string name="change">Изменить</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="welcome_text_style">
+        <item name="fontFamily">@font/lato_bold_italic</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

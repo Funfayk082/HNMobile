@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.NeedlerMainActivity"
+    android:background="@color/white"
+    android:padding="30dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/city"
+        android:textSize="20sp"
+        style="@style/welcome_text_style" />
+    <TextView
+        android:id="@+id/city_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:maxWidth="250dp"
+        android:text="@string/_a"
+        style="@style/welcome_text_style"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/city_name_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="@string/address"
+        style="@style/welcome_text_style"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/address_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        app:flow_wrapMode="aligned"
+        android:textAlignment="viewEnd"
+        app:layout_constraintTop_toBottomOf="@id/city_name_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        style="@style/welcome_text_style"
+        android:textSize="20sp"
+        android:text="@string/_a"/>
+
+    <TextView
+        android:id="@+id/change_info_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address_text_view"
+        android:layout_marginTop="20dp"
+        android:text="@string/change_link"
+        android:textColor="@color/blue"/>
+
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/commentary_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:importantForAutofill="no"
+        android:inputType="textAutoComplete"
+        app:layout_constraintBottom_toTopOf="@id/need_help_btn"
+        android:layout_marginBottom="50dp"
+        android:hint="@string/need_lelp_comment_hint"
+        android:textColorHint="@color/gray"
+        android:lines="1"
+        android:textAlignment="center"
+        android:background="@drawable/edit_text_style"/>
+
+    <Button
+        android:id="@+id/need_help_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/im_needler_btn"
+        android:text="@string/need_help_txt"
+        android:textSize="20sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
