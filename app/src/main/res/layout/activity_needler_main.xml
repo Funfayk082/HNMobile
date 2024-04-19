@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.NeedlerMainActivity"
+    tools:context=".presentation.main_ui.NeedlerMainActivity"
     android:background="@color/white"
     android:padding="30dp">
     <TextView
@@ -61,20 +61,32 @@
         android:text="@string/change_link"
         android:textColor="@color/blue"/>
 
-    <EditText
-        android:textColor="@color/black"
-        android:id="@+id/commentary_input"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:id="@+id/commentary_input_layout"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:importantForAutofill="no"
         android:inputType="textAutoComplete"
         app:layout_constraintBottom_toTopOf="@id/need_help_btn"
         android:layout_marginBottom="50dp"
-        android:hint="@string/need_lelp_comment_hint"
+        android:textSize="18sp"
+        app:helperText="@string/optional_hint"
+        app:helperTextTextColor="@color/gray"
         android:textColorHint="@color/gray"
         android:lines="1"
         android:textAlignment="center"
-        android:background="@drawable/edit_text_style"/>
+        app:hintTextColor="@color/secondary_color">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:hint="@string/need_lelp_comment_hint"
+            android:layout_height="50dp"
+            android:id="@+id/commentary_input"
+            android:background="@drawable/edit_text_style"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/need_help_btn"

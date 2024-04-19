@@ -5,7 +5,7 @@ import com.example.helpnearbymobile.domain.model.CreateOrderDto
 import com.google.gson.Gson
 
 object SharedPreferencesManager {
-    fun getDataFromJson(prefs: SharedPreferences, key: String): CreateOrderDto{
+    fun getOrderDataFromJson(prefs: SharedPreferences, key: String): CreateOrderDto{
         val gson = Gson()
         val json = prefs.getString(key, "")
         return gson.fromJson(json, CreateOrderDto::class.java)
@@ -16,6 +16,10 @@ object SharedPreferencesManager {
         val gson = Gson()
         val json = gson.toJson(myObject)
         editor.putString(key, json)
-        editor.commit()
+        editor.apply()
+    }
+
+    fun saveToken(prefs: SharedPreferences, token: String){
+        prefs.edit().putString("fbToken", token).apply()
     }
 }

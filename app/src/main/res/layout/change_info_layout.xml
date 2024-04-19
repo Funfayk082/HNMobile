@@ -6,6 +6,8 @@
     android:background="@color/white"
     android:padding="30dp">
     <EditText
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textSize="18sp"
         android:textColor="@color/black"
         android:background="@drawable/edit_text_style"
         android:hint="@string/choose_city"
@@ -16,6 +18,8 @@
         android:layout_height="50dp"
         app:layout_constraintTop_toTopOf="parent" />
     <EditText
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textSize="18sp"
         android:textColor="@color/black"
         android:layout_marginTop="30dp"
         android:background="@drawable/edit_text_style"

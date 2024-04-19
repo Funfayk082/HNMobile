@@ -1,8 +1,7 @@
-package com.example.helpnearbymobile.presentation
+package com.example.helpnearbymobile.presentation.main_ui
 
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.EditText
@@ -34,7 +33,7 @@ class NeedlerMainActivity : AppCompatActivity() {
 
         with(binding) {
             prefs = getSharedPreferences("order", MODE_PRIVATE)
-            val data = SharedPreferencesManager.getDataFromJson(prefs, "orderData")
+            val data = SharedPreferencesManager.getOrderDataFromJson(prefs, "orderData")
             if (data.equals(null)) {
                 createChangeView(this)
             }
@@ -47,11 +46,11 @@ class NeedlerMainActivity : AppCompatActivity() {
             needHelpBtn.setOnClickListener { _ ->
                 needlerViewModel.postOrder(
                     CreateOrderDto(
-                        city!!,
-                        commentaryInput.text.toString(),
+                        city!!.trim(),
+                        commentaryInput.text.toString().trim(),
                         "Не принят",
                         "",
-                        address!!
+                        address!!.trim()
                     ), this@NeedlerMainActivity
                 )
 

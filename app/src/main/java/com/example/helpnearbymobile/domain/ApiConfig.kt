@@ -14,7 +14,7 @@ class ApiConfig {
             return retrofit.create(OrderRepository::class.java)
         }
 
-        fun getApiAnwsrs() {
+        fun getApiAnswers() {
             //TODO: Реализовать апи
         }
     }

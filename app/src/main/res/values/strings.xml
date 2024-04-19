@@ -7,9 +7,13 @@
     <string name="_a">------</string>
     <string name="address">Адрес</string>
     <string name="need_help_txt">Нужна помощь!</string>
-    <string name="need_lelp_comment_hint">Комментарий (опционально)</string>
+    <string name="need_lelp_comment_hint">Комментарий</string>
     <string name="change_link">Изменить</string>
     <string name="choose_city">Введите город</string>
     <string name="choose_address">Введите адрес</string>
     <string name="change">Изменить</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="optional_hint">* опционально</string>
+    <string name="msg_token_fmt">FIX ME %s</string>
 </resources>
