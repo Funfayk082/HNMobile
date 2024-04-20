@@ -47,7 +47,7 @@ class NeedlerMainActivity : AppCompatActivity() {
                 needlerViewModel.postOrder(
                     CreateOrderDto(
                         city!!.trim(),
-                        commentaryInput.text.toString().trim(),
+                        commentaryInput.toString().trim(),
                         "Не принят",
                         "",
                         address!!.trim()
