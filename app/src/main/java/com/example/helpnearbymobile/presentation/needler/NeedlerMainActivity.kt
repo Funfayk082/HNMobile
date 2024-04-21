@@ -1,4 +1,4 @@
-package com.example.helpnearbymobile.presentation.main_ui
+package com.example.helpnearbymobile.presentation.needler
 
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -10,10 +10,9 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.helpnearbymobile.R
-import com.example.helpnearbymobile.common.SharedPreferencesManager
+import com.example.helpnearbymobile.data.SharedPreferencesManager
 import com.example.helpnearbymobile.databinding.ActivityNeedlerMainBinding
 import com.example.helpnearbymobile.domain.model.CreateOrderDto
-import com.example.helpnearbymobile.domain.viewmodel.NeedlerViewModel
 
 class NeedlerMainActivity : AppCompatActivity() {
     var city: String? = null

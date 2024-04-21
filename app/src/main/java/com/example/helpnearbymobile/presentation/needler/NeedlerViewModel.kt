@@ -1,4 +1,4 @@
-package com.example.helpnearbymobile.domain.viewmodel
+package com.example.helpnearbymobile.presentation.needler
 
 import android.content.Context
 import android.util.Log
@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.helpnearbymobile.domain.ApiConfig
+import com.example.helpnearbymobile.data.ApiConfig
 import com.example.helpnearbymobile.domain.model.CreateOrderDto
 import retrofit2.Call
 import retrofit2.Callback

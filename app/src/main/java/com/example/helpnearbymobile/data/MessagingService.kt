@@ -1,8 +1,11 @@
-package com.example.helpnearbymobile.common
+package com.example.helpnearbymobile.data
 
+<<<<<<< Updated upstream:app/src/main/java/com/example/helpnearbymobile/common/MessagingService.kt
 import android.os.Parcel
 import android.os.Parcelable
 import com.example.helpnearbymobile.data.repositories.Storage
+=======
+>>>>>>> Stashed changes:app/src/main/java/com/example/helpnearbymobile/data/MessagingService.kt
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 

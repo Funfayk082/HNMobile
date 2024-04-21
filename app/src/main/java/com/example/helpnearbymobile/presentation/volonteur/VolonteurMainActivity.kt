@@ -1,12 +1,16 @@
-package com.example.helpnearbymobile.presentation.main_ui
+package com.example.helpnearbymobile.presentation.volonteur
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+<<<<<<< Updated upstream:app/src/main/java/com/example/helpnearbymobile/presentation/main_ui/VolonteurMainActivity.kt
 import com.example.helpnearbymobile.data.repositories.Storage
 import com.example.helpnearbymobile.domain.viewmodel.VolonteurViewModel
+=======
+import com.example.helpnearbymobile.R
+import com.example.helpnearbymobile.data.Storage
+>>>>>>> Stashed changes:app/src/main/java/com/example/helpnearbymobile/presentation/volonteur/VolonteurMainActivity.kt
 import com.google.firebase.messaging.FirebaseMessaging
 
 class VolonteurMainActivity : AppCompatActivity() {

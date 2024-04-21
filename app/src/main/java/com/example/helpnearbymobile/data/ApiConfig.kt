@@ -1,4 +1,4 @@
-package com.example.helpnearbymobile.domain
+package com.example.helpnearbymobile.data
 
 import com.example.helpnearbymobile.data.repositories.OrderRepository
 import retrofit2.Retrofit

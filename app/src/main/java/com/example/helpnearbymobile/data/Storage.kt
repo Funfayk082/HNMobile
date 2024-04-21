@@ -1,4 +1,4 @@
-package com.example.helpnearbymobile.data.repositories
+package com.example.helpnearbymobile.data
 
 import android.os.Handler
 import android.os.Looper

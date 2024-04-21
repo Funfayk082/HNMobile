@@ -1,4 +1,4 @@
-package com.example.helpnearbymobile.common
+package com.example.helpnearbymobile.data
 
 import android.content.SharedPreferences
 import com.example.helpnearbymobile.domain.model.CreateOrderDto

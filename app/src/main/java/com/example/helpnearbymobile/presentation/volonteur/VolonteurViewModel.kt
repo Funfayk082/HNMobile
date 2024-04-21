@@ -1,9 +1,9 @@
-package com.example.helpnearbymobile.domain.viewmodel
+package com.example.helpnearbymobile.presentation.volonteur
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.helpnearbymobile.domain.ApiConfig
+import com.example.helpnearbymobile.data.ApiConfig
 import com.example.helpnearbymobile.domain.model.GetOrderDto
 import retrofit2.Callback
 

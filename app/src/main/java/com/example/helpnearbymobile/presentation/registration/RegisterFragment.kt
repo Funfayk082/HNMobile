@@ -1,4 +1,4 @@
-package com.example.helpnearbymobile.presentation.auth_ui
+package com.example.helpnearbymobile.presentation.registration
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

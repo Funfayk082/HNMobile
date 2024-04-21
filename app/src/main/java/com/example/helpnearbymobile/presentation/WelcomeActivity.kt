@@ -11,9 +11,14 @@ import androidx.lifecycle.MutableLiveData
 import com.example.helpnearbymobile.R
 import com.example.helpnearbymobile.common.SharedPreferencesManager
 import com.example.helpnearbymobile.databinding.ActivityWelcomeBinding
+<<<<<<< Updated upstream
 import com.example.helpnearbymobile.presentation.main_ui.NeedlerMainActivity
 import com.example.helpnearbymobile.presentation.main_ui.VolonteurMainActivity
 import com.google.firebase.messaging.FirebaseMessaging
+=======
+import com.example.helpnearbymobile.presentation.needler.NeedlerMainActivity
+import com.example.helpnearbymobile.presentation.volonteur.VolonteurMainActivity
+>>>>>>> Stashed changes
 
 class WelcomeActivity : AppCompatActivity() {
     lateinit var token: String
