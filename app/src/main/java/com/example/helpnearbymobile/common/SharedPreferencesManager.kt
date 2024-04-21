@@ -18,8 +18,4 @@ object SharedPreferencesManager {
         editor.putString(key, json)
         editor.apply()
     }
-
-    fun saveToken(prefs: SharedPreferences, token: String){
-        prefs.edit().putString("fbToken", token).apply()
-    }
 }
