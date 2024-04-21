@@ -14,7 +14,6 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityWelcomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        prefs = getSharedPreferences("token", MODE_PRIVATE)
 
         with(binding) {
             welcomeTextView.animate().apply {

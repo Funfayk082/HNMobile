@@ -12,9 +12,15 @@
     <string name="choose_city">Введите город</string>
     <string name="choose_address">Введите адрес</string>
     <string name="change">Изменить</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="optional_hint">* опционально</string>
     <string name="msg_token_fmt">FIX ME %s</string>
     <string name="login_hint_txt">Логин</string>
+    <string name="orderdata_key">orderData</string>
+    <string name="order_sent_text">Заявка отправлена</string>
+    <string name="error">Ошибка</string>
+    <string name="not_accepted">Не принят</string>
+    <string name="shared_prefs_key_order">order</string>
+    <string name="connection_error">Соединение не установлено</string>
+    <string name="connected">Соединено с сервером</string>
 </resources>
