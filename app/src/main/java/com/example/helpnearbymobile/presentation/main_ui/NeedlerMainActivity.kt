@@ -32,8 +32,8 @@ class NeedlerMainActivity : AppCompatActivity() {
 
 
         with(binding) {
-            prefs = getSharedPreferences("order", MODE_PRIVATE)
-            val data = SharedPreferencesManager.getOrderDataFromJson(prefs, "orderData")
+            prefs = getSharedPreferences(getString(R.string.shared_prefs_key_order), MODE_PRIVATE)
+            val data = SharedPreferencesManager.getOrderDataFromJson(prefs, getString(R.string.orderdata_key))
             if (data.equals(null)) {
                 createChangeView(this)
             }
@@ -47,8 +47,8 @@ class NeedlerMainActivity : AppCompatActivity() {
                 needlerViewModel.postOrder(
                     CreateOrderDto(
                         city!!.trim(),
-                        commentaryInput.text.toString().trim(),
-                        "Не принят",
+                        commentaryInput.toString().trim(),
+                        getString(R.string.not_accepted),
                         "",
                         address!!.trim()
                     ), this@NeedlerMainActivity
@@ -57,9 +57,11 @@ class NeedlerMainActivity : AppCompatActivity() {
                 needlerViewModel.orderId.observe(this@NeedlerMainActivity) { orderId ->
                     orderId?.let {
                         if (it != 0L) {
-                            Toast.makeText(this@NeedlerMainActivity, "Заявка отправлена", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@NeedlerMainActivity,
+                                getString(R.string.order_sent_text), Toast.LENGTH_SHORT).show()
                         } else {
-                            Toast.makeText(this@NeedlerMainActivity, "Ошибка", Toast.LENGTH_LONG)
+                            Toast.makeText(this@NeedlerMainActivity,
+                                getString(R.string.error), Toast.LENGTH_LONG)
                                 .show()
                         }
                     }
@@ -92,7 +94,7 @@ class NeedlerMainActivity : AppCompatActivity() {
                     "",
                     address!!
                 ),
-                "orderData"
+                getString(R.string.orderdata_key)
             )
 
             with(binding) {

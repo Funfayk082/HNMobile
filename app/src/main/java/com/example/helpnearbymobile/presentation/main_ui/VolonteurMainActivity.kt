@@ -5,6 +5,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.example.helpnearbymobile.R
 import com.example.helpnearbymobile.data.repositories.Storage
 import com.example.helpnearbymobile.domain.viewmodel.VolonteurViewModel
 import com.google.firebase.messaging.FirebaseMessaging
@@ -14,25 +15,23 @@ class VolonteurMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        FirebaseMessaging.getInstance().subscribeToTopic("orders")
+        FirebaseMessaging.getInstance().subscribeToTopic(getString(R.string.shared_prefs_key_order))
             .addOnCompleteListener { task ->
-                var msg = "Соединено с сервером"
+                var msg = getString(R.string.connected)
                 if (!task.isSuccessful) {
-                    msg = "Соединение не установлено"
+                    msg = getString(R.string.connection_error)
                 }
                 Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
             } // TODO: Перенести в логику с авторизацией
 
         Storage.observableOfMessage.observe(this) {
             if (it) {
-                volonteurViewModel.getOrders("Кострома")
+                volonteurViewModel.getOrders("Кострома") // TODO: Название города будет браться от пользователя
                 volonteurViewModel.orders.observe(this@VolonteurMainActivity) {
                     if (it.isNullOrEmpty()) {
-                        Log.d("ORDER", "Empty")
+                        // TODO: Отобразить сообщение об отсутствии заказов
                     } else {
-                        it.forEach {
-                            Log.d("ORDER", it.toString())
-                        }
+                        // TODO: Отобразить полученные заказы на UI
                     }
                 }
             }
