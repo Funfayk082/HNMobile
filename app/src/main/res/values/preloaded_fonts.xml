@@ -4,7 +4,5 @@
         <item>@font/bungee_inline</item>
         <item>@font/lato_bold_italic</item>
         <item>@font/ubuntu_bold_italic</item>
-        <item>@font/ubuntu_medium</item>
-        <item>@font/ubuntu_mono_bold</item>
     </array>
 </resources>
